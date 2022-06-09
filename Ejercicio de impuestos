@@ -1,3 +1,10 @@
 ingreso=float(input("Ingrese el ingreso anual:"))
-imp1=(0.18*ingreso)-556.2
-imp2=14839.2+(0,32*(ingreso-85528))
+imp1=round((0.18*ingreso)-556.2,0)
+imp2=round(14839.2+(0.32*(ingreso-85528)),0)
+if ingreso<=85528:
+    if imp1<0:
+        print("El impuesto es: 0.0 pesos")
+    else:
+        print("El impuesto es: ", imp1, "pesos")
+else:
+    print(imp2)
