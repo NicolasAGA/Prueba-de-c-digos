@@ -1,0 +1,11 @@
+numerosimpares=0
+numerospares=0
+numero=int(input("Introduce un número o escribe 0 para detener"))
+while numero!=0:
+    if numero%2==1:
+        numerosimpares +=1
+    else:
+        numerospares+=1
+    numero=int(input("Introduce un número o escribe 0 para detener")) 
+print("Ingresaste",numerospares,"número(s) par(es)")
+print("Ingresaste",numerosimpares,"número(s) impar(es)")
